@@ -1,5 +1,7 @@
 // Write your code here
 module.exports = Person
+
+/**ES Class definition
 class Person{
 	
 	constructor(name,age){
@@ -11,4 +13,14 @@ class Person{
 		return "My name is ${this.name}.I am ${this.age} years old."
 	}
 }
+*/
 
+/**ES5 prototype definition*/
+function Person(name,age){
+	this.name = name;
+	this.age = age;
+}
+
+Person.prototype.introduce = function(){
+	return "My name is "+ this.name+"."+"I am "+this.age+" years old.";
+}
