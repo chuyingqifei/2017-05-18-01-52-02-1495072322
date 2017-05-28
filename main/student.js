@@ -25,6 +25,6 @@ Student.prototype.constructor = Student;
 
 Student.prototype.introduce = function(){
 	//return "My name is "+ this.name+"."+"I am " + this.age+" years old."+"I am a Student. I am at Class"+this.klass+".";
-	return "My name is "+ Student.name+"."+"I am " + Student.age+" years old."+"I am a Student. I am at Class"+this.klass+".";
+	return "My name is "+ this.name+". "+"I am " + this.age+" years old. "+"I am a Student. I am at Class"+this.klass+".";
 }
 
