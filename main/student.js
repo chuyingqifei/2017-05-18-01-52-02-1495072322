@@ -17,7 +17,7 @@ class Student extends Person{
 */
 
 function Student(name,age,klass){
-	Person.call(this,[name,age]);
+	Person.call(this,name,age);
 	this.klass = klass;
 }
 Student.prototype = new Person();
